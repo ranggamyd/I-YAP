@@ -17,7 +17,7 @@
     <!-- Responsive-->
     <link rel="stylesheet" href="<?= base_url('assets') ?>/front/css/responsive.css" />
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets') ?>/front/images/malnutrisi.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets') ?>/img/logo_only.png" />
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="<?= base_url('assets') ?>/front/css/jquery.mCustomScrollbar.min.css" />
     <!-- Tweaks for older IEs-->
@@ -84,16 +84,12 @@
                                         <td><?= $item['nama'] ?></td>
                                     </tr>
                                     <tr>
-                                        <th>Jenis Kelamin:</th>
-                                        <td><?= $item['jenis_kelamin'] ?></td>
-                                    </tr>
-                                    <tr>
                                         <th>Umur:</th>
                                         <td><?= $item['umur'] ?></td>
                                     </tr>
                                     <tr>
-                                        <th>Nama Orang Tua:</th>
-                                        <td><?= $item['nama_orangtua'] ?></td>
+                                        <th>No. HP:</th>
+                                        <td><?= $item['no_hp'] ?></td>
                                     </tr>
                                     <tr>
                                         <th>Alamat:</th>

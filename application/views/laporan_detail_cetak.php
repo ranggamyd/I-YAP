@@ -14,10 +14,6 @@
                             <th>Nama:</th>
                             <td><?= $pasien['nama'] ?></td>
                         </tr>
-                        <!-- <tr>
-                            <th>Jenis Kelamin:</th>
-                            <td><?= $pasien['jenis_kelamin'] ?></td>
-                        </tr> -->
                         <tr>
                             <th>Umur:</th>
                             <td><?= $pasien['umur'] ?></td>
