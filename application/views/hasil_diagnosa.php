@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SP - Malnutrisi</title>
+    <title>SPDP Itik - AHP CF</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Bootstrap App Landing Template">
@@ -15,7 +15,7 @@
     <meta name="theme-name" content="small-apps" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets') ?>/front/images/malnutrisi.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets') ?>/img/logo_only.png" />
 
     <!-- PLUGINS CSS STYLE -->
     <link rel="stylesheet" href="<?= base_url('assets') ?>/front/plugins/bootstrap/bootstrap.min.css">

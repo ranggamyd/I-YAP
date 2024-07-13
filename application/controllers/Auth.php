@@ -40,7 +40,7 @@ class Auth extends CI_Controller
   {
     $this->auth_model->logout();
     $this->session->set_flashdata('sukses', 'Berhasil Keluar !');
-    redirect('auth');
+    redirect('landing_page');
   }
 
   // public function forgot_password()

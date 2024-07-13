@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>SP - Malnutrisi</title>
+    <title>SPDP Itik - AHP CF</title>
     <!-- bootstrap css -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets') ?>/front/css/bootstrap.min.css" />
     <!-- style css -->
@@ -36,10 +36,10 @@
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
     <nav class="navbar main-nav shadow-sm navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
         <div class="header_section">
-            <div class="header_bg">
+            <div class="" style="background-color: rgba(255, 255, 255, 0.2);">
                 <div class="container">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <a class="logo" href="<?= base_url('landing_page') ?>"><img src="<?= base_url('assets') ?>/front/images/logo.png" /></a>
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="logo" href="<?= base_url('landing_page') ?>"><img src="<?= base_url('assets') ?>/img/logo_full2.png" /></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -52,7 +52,7 @@
                             <div class="call_section">
                                 <ul>
                                     <div class="nav-item">
-                                        <a href="<?= base_url('auth') ?>" class="btn btn-outline-primary"><i class="fas fa-lock mr-2"></i>Login</a>
+                                        <a href="<?= base_url('/') ?>" class="btn btn-outline-warning"><i class="fas fa-check mr-2"></i>Selesai</a>
                                     </div>
                                 </ul>
                             </div>
@@ -74,7 +74,7 @@
                 <div class="col-6">
                     <div class="card shadow-sm mb-3">
                         <div class="card-header">
-                            <h4 class="mb-0 text-gray-800">Data Pasien</h4>
+                            <h4 class="mb-0 text-gray-800">Data Pengguna</h4>
                         </div>
                         <div class="card-body">
                             <table class="table table-striped">
@@ -130,7 +130,7 @@
                 <div class="col-6">
                     <div class="card shadow-sm mb-3">
                         <div class="card-header">
-                            <h4 class="mb-0 text-gray-800">Gejala yang di alami pasien</h4>
+                            <h4 class="mb-0 text-gray-800">Gejala yang di alami Pengguna</h4>
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered table-striped diagnosa">
@@ -270,7 +270,7 @@
     </section>
     <div class="copyright_section">
         <div class="container">
-            <p class="copyright_text">Copyright © 2023. Sistem Pakar Malnutrisi</p>
+            <p class="copyright_text">Copyright © 2024. SPDP ITIK - Metode AHP CF</p>
         </div>
     </div>
 

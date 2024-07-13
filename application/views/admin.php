@@ -33,10 +33,14 @@
                                 <td><?= $item['password'] ?></td>
                                 <td><?= $item['email'] ?></td>
                                 <td class="text-center">
-                                    <div class="btn-group" role="group" aria-label="Opsi">
-                                        <a href="#" class="btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#edit_admin<?= $item['id_admin'] ?>" data-toggle="tooltip" data-placement="right" title="Edit Admin"><i class="fa fa-fw fa-edit"></i></a>
-                                        <a href="<?= base_url('admin/hapus/' . $item['id_admin']) ?>" onclick="return confirm('Apakah anda yakin ingin menghapus Admin ?')" class="btn btn-sm btn-danger shadow-sm" data-toggle="tooltip" data-placement="right" title="Hapus Admin"><i class="fas fa-trash-alt"></i></a>
-                                    </div>
+                                    <?php if ($this->session->userdata('id_admin') == 1) : ?>
+                                        <?php if ($item['id_admin'] != 1) : ?>
+                                            <div class="btn-group" role="group" aria-label="Opsi">
+                                                <a href="#" class="btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#edit_admin<?= $item['id_admin'] ?>" data-toggle="tooltip" data-placement="right" title="Edit Admin"><i class="fa fa-fw fa-edit"></i></a>
+                                                <a href="<?= base_url('admin/hapus/' . $item['id_admin']) ?>" onclick="return confirm('Apakah anda yakin ingin menghapus Admin ?')" class="btn btn-sm btn-danger shadow-sm" data-toggle="tooltip" data-placement="right" title="Hapus Admin"><i class="fas fa-trash-alt"></i></a>
+                                            </div>
+                                        <?php endif ?>
+                                    <?php endif ?>
                                 </td>
                             </tr>
                         <?php endforeach ?>

@@ -78,7 +78,7 @@
 
                                             foreach ($result as $bc) {
                                                 if ($i == $ra) { ?>
-                                                    <tr>
+                                                    <tr hidden>
                                                         <td><input type="hidden" name="C[<?php echo $ra . $jid; ?>]" value="<?php echo $ra; ?>"><?php echo $rl['kode_gejala']; ?></td>
                                                         <td><input type="hidden" name="W[<?php echo $ra . $jid; ?>]" value="1"> </td>
                                                         <td><input type="hidden" id="" name="X[<?php echo $ra . $jid; ?>]" value="<?php echo $jo; ?>"><?php echo $bc['kode_gejala']; ?></td>
@@ -214,7 +214,12 @@
                                                         $('.calculate<?php echo $re; ?>').each(function(e) {
                                                             sumR += parseFloat($(this).text());
                                                         });
-                                                        $('#sumR<?php echo $re; ?>').html(sumR.toFixed(5));
+                                                        var sumRText = sumR.toFixed(5);
+                                                        if (parseFloat(sumRText) == Math.floor(sumR)) {
+                                                            $('#sumR<?php echo $re; ?>').html(Math.floor(sumR));
+                                                        } else {
+                                                            $('#sumR<?php echo $re; ?>').html(sumRText);
+                                                        }
                                                     });
                                                 </script>
                                             <?php endforeach; ?>

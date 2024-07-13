@@ -38,7 +38,7 @@
         <div class="col-6">
             <div class="card shadow-sm mb-3">
                 <div class="card-header">
-                    <h4 class="mb-0 text-gray-800">Gejala yang di alami pasien</h4>
+                    <h4 class="mb-0 text-gray-800">Gejala yang di alami pengguna</h4>
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered table-striped diagnosa">

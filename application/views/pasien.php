@@ -33,10 +33,12 @@
                                 <td><?= $item['no_hp'] ?></td>
                                 <td><?= $item['alamat'] ?></td>
                                 <td class="text-center">
-                                    <div class="btn-group" role="group" aria-label="Opsi">
-                                        <a href="#" class="btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#edit_pasien<?= $item['id_pasien'] ?>" data-toggle="tooltip" data-placement="right" title="Edit pasien"><i class="fa fa-fw fa-edit"></i></a>
-                                        <a href="<?= base_url('pasien/hapus/' . $item['id_pasien']) ?>" onclick="return confirm('Apakah anda yakin ingin menghapus pasien ini ?')" class="btn btn-sm btn-danger shadow-sm" data-toggle="tooltip" data-placement="right" title="Hapus pasien"><i class="fas fa-trash-alt"></i></a>
-                                    </div>
+                                    <?php if ($this->session->userdata('id_admin') == 1) : ?>
+                                        <div class="btn-group" role="group" aria-label="Opsi">
+                                            <!-- <a href="#" class="btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#edit_pasien<?= $item['id_pasien'] ?>" data-toggle="tooltip" data-placement="right" title="Edit pasien"><i class="fa fa-fw fa-edit"></i></a> -->
+                                            <a href="<?= base_url('pasien/hapus/' . $item['id_pasien']) ?>" onclick="return confirm('Apakah anda yakin ingin menghapus pasien ini ?')" class="btn btn-sm btn-danger shadow-sm" data-toggle="tooltip" data-placement="right" title="Hapus pasien"><i class="fas fa-trash-alt"></i></a>
+                                        </div>
+                                    <?php endif ?>
                                 </td>
                             </tr>
                         <?php endforeach ?>
@@ -77,7 +79,7 @@
     </div>
 
     <!-- Modal edit pasien -->
-    <?php foreach ($pasien as $item) { ?>
+    <!-- <?php foreach ($pasien as $item) { ?>
         <div class="modal fade" id="edit_pasien<?= $item['id_pasien'] ?>" tabindex="-1" role="dialog" aria-labelledby="edit_pasienLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -107,5 +109,5 @@
                 </div>
             </div>
         </div>
-    <?php } ?>
+    <?php } ?> -->
 </div>

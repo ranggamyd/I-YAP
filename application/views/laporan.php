@@ -38,7 +38,9 @@
                                 <td class="text-center">
                                     <div class="btn-group" role="group" aria-label="Opsi">
                                         <a href="<?= base_url('laporan/detail/' . $item['id_hasil']) ?>" class="btn btn-sm btn-success shadow-sm" data-toggle="tooltip" data-placement="right" title="Lihat detail"><i class="fa fa-fw fa-eye"></i></a>
-                                        <a href="<?= base_url('laporan/hapus/' . $item['id_hasil']) ?>" onclick="return confirm('Apakah anda yakin ingin menghapus hasil ?')" class="btn btn-sm btn-danger shadow-sm" data-toggle="tooltip" data-placement="right" title="Hapus hasil"><i class="fas fa-trash-alt"></i></a>
+                                        <?php if ($this->session->userdata('id_admin') == 1) : ?>
+                                            <a href="<?= base_url('laporan/hapus/' . $item['id_hasil']) ?>" onclick="return confirm('Apakah anda yakin ingin menghapus hasil ?')" class="btn btn-sm btn-danger shadow-sm" data-toggle="tooltip" data-placement="right" title="Hapus hasil"><i class="fas fa-trash-alt"></i></a>
+                                        <?php endif ?>
                                     </div>
                                 </td>
                             </tr>
