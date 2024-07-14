@@ -51,7 +51,7 @@
 
            <!-- select2 -->
            <!-- <script src="<?= base_url('assets') ?>/vendor/select2/select2.min.js" integrity="sha256-AFAYEOkzB6iIKnTYZOdUf9FFje6lOTYdwRJKwTN5mks=" crossorigin="anonymous"></script> -->
-           <script src="<?= base_url('assets') ?>/vendor/select2/select2.min.js"></script>
+           <!-- <script src="<?= base_url('assets') ?>/vendor/select2/select2.min.js"></script> -->
 
            <!-- select2-bootstrap4-theme -->
            <script src="<?= base_url('assets') ?>/vendor/select2/script.js"></script>
