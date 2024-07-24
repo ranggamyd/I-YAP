@@ -101,10 +101,10 @@
                                         </div>
                                     </div> -->
                                 <input type="hidden" class="form-control main-form mb-3" id="id_pasien" value="<?= $idpasien ?>" name="id_pasien" readonly>
-                                <input type="text" class="form-control main-form" name="tgl_diagnosa" id="tgl_diagnosa" value="<?php
-                                                                                                                                date_default_timezone_set('Asia/Jakarta');
-                                                                                                                                echo date('Y-m-d H:i:s');
-                                                                                                                                ?>">
+                                <input type="hidden" class="form-control main-form" name="tgl_diagnosa" id="tgl_diagnosa" value="<?php
+                                                                                                                                    date_default_timezone_set('Asia/Jakarta');
+                                                                                                                                    echo date('Y-m-d H:i:s');
+                                                                                                                                    ?>">
                                 <div class="row">
                                     <div class="col">
                                         <label for="nama">Nama Lengkap :</label>

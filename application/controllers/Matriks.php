@@ -89,34 +89,4 @@ class Matriks extends CI_Controller
         $this->load->view('matriks_perbandingan', $data);
         $this->load->view('parts/footer');
     }
-
-
-    // public function get_rule2()
-    // {
-    //     // Tangkap data yang dikirim melalui Ajax
-    //     if ($this->input->post('selectedValue')) {
-    //         $selectedValue = $this->input->post('selectedValue');
-
-    //         // Lakukan pemrosesan atau perubahan data sesuai kebutuhan Anda
-    //         // Misalnya, simpan data yang dipilih ke dalam database atau lakukan operasi lainnya
-
-    //         // Contoh: Simpan data yang dipilih ke dalam variabel $data
-    //         $data = $selectedValue;
-
-    //         // var_dump($data);
-
-    //         // Kirim respon kembali ke halaman JavaScript
-    //         echo "Data berhasil diperbarui menjadi: " . $data;
-    //     }
-    // }
-
-    // public function id_gejala()
-    // {
-    //     $id_penyakit = $_GET['id_penyakit'];
-    //     $data_penyakit = $this->rule_model->get_rule_where($id_penyakit);
-    //     foreach ($data_penyakit as $dp) {
-    //         $id_gejala = $dp['id_gejala'];
-    //     }
-    //     echo number_format($id_gejala);
-    // }
 }

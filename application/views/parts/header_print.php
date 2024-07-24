@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SP ITIK </title>
+    <title>I-Yap - Admin</title>
 
     <!-- <script src="<?= base_url('assets') ?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <!-- <script src="<?= base_url('assets') ?>/js/sb-admin-2.min.js"></script> -->

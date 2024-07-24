@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SPDP Itik - Admin</title>
+    <title>I-Yap - Admin</title>
 
     <script src="<?= base_url('assets') ?>/vendor/jquery/jquery.min.js"></script>
     <script type="text/javascript">
