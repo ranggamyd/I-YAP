@@ -120,12 +120,12 @@
             <hr class="sidebar-divider">
 
             <!-- <div class="sidebar-heading">Misc</div> -->
-            <li class="nav-item <?= ($this->uri->segment(1) == 'pasien' && $this->uri->segment(2) == '') ? 'active' : ''; ?>">
+            <!-- <li class="nav-item <?= ($this->uri->segment(1) == 'pasien' && $this->uri->segment(2) == '') ? 'active' : ''; ?>">
                 <a class="nav-link py-2" href="<?= base_url('pasien') ?>">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Data Pengguna</span>
                 </a>
-            </li>
+            </li> -->
             <li class="nav-item <?= ($this->uri->segment(1) == 'admin') ? 'active' : ''; ?>">
                 <a class="nav-link py-2" href="<?= base_url('admin') ?>">
                     <i class="fas fa-fw fa-user-cog"></i>
