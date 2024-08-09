@@ -218,44 +218,6 @@
             }
         });
     </script>
-    <script>
-        $(document).ready(function() {
-            $('#nama').on('keyup', function() {
-                var nama = $(this).val();
-
-                $.ajax({
-                    type: 'POST',
-                    url: '<?= site_url('landing_page/cari_nama'); ?>',
-                    data: {
-                        nama: nama
-                    },
-                    dataType: 'json',
-                    success: function(data) {
-                        if (data.success) {
-                            $('#id_pasien').val(data.id_pasien);
-                            $('#jenis_kelamin').val(data.jenis_kelamin);
-                            $('#umur').val(data.umur);
-                            $('#tinggi_badan').val(data.tinggi_badan);
-                            $('#berat_badan').val(data.berat_badan);
-                            $('#nama_orangtua').val(data.nama_orangtua);
-                            $('#alamat').val(data.alamat);
-                        } else {
-                            $('#id_pasien').val(<?= $idpasien ?>);
-                            $('#jenis_kelamin').val('');
-                            $('#umur').val('');
-                            $('#tinggi_badan').val('');
-                            $('#berat_badan').val('');
-                            $('#nama_orangtua').val('');
-                            $('#alamat').val('');
-                        }
-                    },
-                    error: function() {
-                        alert('Terjadi kesalahan saat memproses permintaan.');
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>
