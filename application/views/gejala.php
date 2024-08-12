@@ -9,15 +9,15 @@
 
     <div class="card shadow-sm">
         <div class="card-header">
-            <a href="#" class="btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#tambah_gejala"><i class="fas fa-plus-circle mr-2"></i>Tambah data</a>
+            <a href="#" class="btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#tambah_gejala"><i class="fas fa-plus-circle mr-2"></i>Tambah Data</a>
         </div>
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered table-striped" id="dataTable">
                     <thead class="text-center">
                         <th>#</th>
-                        <th>Kode Gejala</th>
-                        <th>Nama Gejala</th>
+                        <th>Kode</th>
+                        <th>Gejala</th>
                         <th><i class="fas fa-cogs"></i></th>
                     </thead>
                     <tbody>
@@ -47,14 +47,14 @@
         <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="tambah_gejalaLabel">Tambah gejala</h5>
+                    <h5 class="modal-title" id="tambah_gejalaLabel">Tambah Data Gejala</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form action="<?= base_url('gejala/tambah') ?>" method="post">
-                        <label for="kode_gejala">Kode Gejala :</label>
+                        <label for="kode_gejala">Kode :</label>
                         <input type="text" class="form-control mb-3" id="kode_gejala" name="kode_gejala" value="<?= $kode_gejala_auto ?>" readonly required>
                         <label for="nama_gejala">Nama Gejala :</label>
                         <textarea name="nama_gejala" id="nama_gejala" cols="30" rows="10" class="form-control" required></textarea>
@@ -62,7 +62,7 @@
                 <div class="modal-footer">
                     <button type="reset" class="btn btn-outline-secondary"><i class="fas fa-undo mr-1"></i>
                         Reset</button>
-                    <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Simpan</button>
+                    <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Save</button>
                 </div>
                 </form>
             </div>
@@ -75,14 +75,14 @@
             <div class="modal-dialog modal-md" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="edit_gejalaLabel">Edit gejala</h5>
+                        <h5 class="modal-title" id="edit_gejalaLabel">Edit Data Gejala</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
                         <form action="<?= base_url('gejala/edit') ?>" method="post">
-                            <label for="kode_gejala">Kode Gejala :</label>
+                            <label for="kode_gejala">Kode :</label>
                             <input type="hidden" class="form-control mb-3" id="id_gejala" name="id_gejala" value="<?= $item['id_gejala'] ?>" required readonly>
                             <input type="text" class="form-control mb-3" id="kode_gejala" name="kode_gejala" value="<?= $item['kode_gejala'] ?>" required readonly>
                             <label for="nama_gejala">Nama Gejala :</label>
@@ -91,7 +91,7 @@
                     <div class="modal-footer">
                         <button type="reset" class="btn btn-outline-secondary"><i class="fas fa-undo mr-1"></i>
                             Reset</button>
-                        <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Simpan</button>
+                        <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Save</button>
                     </div>
                     </form>
                 </div>

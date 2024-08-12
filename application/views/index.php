@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>SPDP Itik - Metode AHP CF</title>
+    <title>SDP Itik - Metode AHP CF</title>
     <!-- bootstrap css -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets') ?>/front/css/bootstrap.min.css" />
     <!-- style css -->
@@ -63,12 +63,12 @@
                             <div class="banner_taital_main">
                                 <div class="row mb-5">
                                     <div class="col-md-6 mb-5">
-                                        <h3 class="banner_taital">Selamat Datang <br />Sistem Pakar Diagnosa Penyakit Pada ITIK</h3>
-                                        <p class="banner_text mb-4">Menggunakan Metode AHP - CF</p>
+                                        <h3 class="banner_taital">Selamat Datang di I-YAP<br />(Itik Healthy App)</h3>
+                                        <p class="banner_text mb-4">Menggunakan Metode AHP & CF</p>
                                         <br />
                                         <!-- <p class="banner_text">Malnutrisi adalah salah satu kondisi yang berbahaya, yakni ketika seseorang mengalami ketidakseimbangan nutrisi dalam tubuhnya.</p> -->
                                         <div class="btn_main">
-                                            <div class="about_bt"><a href="<?= base_url('landing_page/diagnosa') ?>">Cek Diagnosa</a></div>
+                                            <div class="about_bt"><a href="<?= base_url('landing_page/diagnosa') ?>">Mulai Diagnosis</a></div>
                                             <!-- <div class="quote_bt"><a href="#">Get A Quote</a></div> -->
                                         </div>
                                     </div>
@@ -88,7 +88,7 @@
     <!-- copyright section start -->
     <div class="fixed-bottom" style="background-color: rgba(255, 255, 255, 0.2);">
         <div class="container">
-            <p class="copyright_text text-light">Copyright © 2024. SPDP ITIK - Metode AHP CF</p>
+            <p class="copyright_text text-light">Copyright &copy; Itik Healthy App - 2024</p>
         </div>
     </div>
     <!-- copyright section end -->

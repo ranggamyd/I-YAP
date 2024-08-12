@@ -9,17 +9,17 @@
 
     <div class="card shadow-sm">
         <div class="card-header">
-            <a href="#" class="btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#tambah_admin"><i class="fas fa-plus-circle mr-2"></i>Tambah data</a>
+            <a href="#" class="btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#tambah_admin"><i class="fas fa-plus-circle mr-2"></i>Tambah Data</a>
         </div>
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered table-striped" id="dataTable">
                     <thead class="text-center">
                         <th>#</th>
-                        <th>Nama</th>
+                        <th>Name</th>
                         <th>Username</th>
                         <th>Password</th>
-                        <th>E-mail</th>
+                        <th>Email</th>
                         <th><i class="fas fa-cogs"></i></th>
                     </thead>
                     <tbody>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="modal-body">
                     <form action="<?= base_url('admin/tambah') ?>" method="post">
-                        <label for="nama">Nama :</label>
+                        <label for="nama">Name :</label>
                         <input type="text" class="form-control mb-3" id="nama" name="nama" required>
                         <div class="row">
                             <div class="col-sm-6">
@@ -94,7 +94,7 @@
                 <div class="modal-footer">
                     <button type="reset" class="btn btn-outline-secondary"><i class="fas fa-undo mr-1"></i>
                         Reset</button>
-                    <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Simpan</button>
+                    <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Save</button>
                 </div>
                 </form>
             </div>
@@ -107,14 +107,14 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="edit_adminLabel">Edit Admin</h5>
+                        <h5 class="modal-title" id="edit_adminLabel">Edit Data Admin</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
                         <form action="<?= base_url('admin/edit') ?>" method="post">
-                            <label for="nama">Nama :</label>
+                            <label for="nama">Name :</label>
                             <input type="hidden" class="form-control mb-3" id="id_admin" name="id_admin" value="<?= $item['id_admin'] ?>" required>
                             <input type="text" class="form-control mb-3" id="nama" name="nama" value="<?= set_value('nama', $item['nama']) ?>" required>
                             <div class="row">
@@ -140,7 +140,7 @@
                     <div class="modal-footer">
                         <button type="reset" class="btn btn-outline-secondary"><i class="fas fa-undo mr-1"></i>
                             Reset</button>
-                        <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Simpan</button>
+                        <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Save</button>
                     </div>
                     </form>
                 </div>

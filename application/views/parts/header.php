@@ -67,7 +67,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #1e1d1b; background-image: linear-gradient(315deg, #1e1d1b 0%, #cc9934 74%);">
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('dashboard') ?>">
                 <!-- <div class="sidebar-brand-icon">
                     <i class="fas fa-user-md"></i>
@@ -106,14 +106,14 @@
             <li class="nav-item <?= ($this->uri->segment(1) == 'rule') ? 'active' : ''; ?>">
                 <a class="nav-link py-2" href="<?= base_url('rule') ?>">
                     <i class="fas fa-fw fa-cogs"></i>
-                    <span>Rule Penyakit</span>
+                    <span>Data Rule</span>
                 </a>
             </li>
 
             <li class="nav-item <?= ($this->uri->segment(1) == 'matriks') ? 'active' : ''; ?>">
                 <a class="nav-link py-2" href="<?= base_url('matriks') ?>">
                     <i class="fas fa-fw fa-square-root-alt"></i>
-                    <span>Matriks AHP</span>
+                    <span>Analisis Perbandingan</span>
                 </a>
             </li>
 
@@ -136,7 +136,7 @@
             <li class="nav-item <?= ($this->uri->segment(1) == 'laporan') ? 'active' : ''; ?>">
                 <a class="nav-link py-2" href="<?= base_url('laporan') ?>">
                     <i class="fas fa-fw fa-file-alt"></i>
-                    <span>Laporan Hasil</span>
+                    <span>Laporan Hasil Diagnosis</span>
                 </a>
             </li>
 

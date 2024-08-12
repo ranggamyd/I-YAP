@@ -10,12 +10,12 @@
                         <div class="col-lg-6 d-flex align-items-center w-100">
                             <div class="p-5 flex-grow-1">
                                 <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-1">Selamat Datang !</h1>
-                                    <h1 class="h6 text-gray-900 mb-4">Sistem Pakar Diagnosa Penyakit Pada ITIK Menggunakan Metode AHP -CF</h1>
+                                    <h1 class="h4 text-gray-900 mb-1">Login Administrator</h1>
+                                    <h1 class="h6 text-gray-900 mb-4">Sistem Diagnosis Penyakit Itik</h1>
                                 </div>
                                 <form action="<?= base_url('auth/login') ?>" method="POST" class="user">
                                     <div class="form-group">
-                                        <input type="text" name="credential" value="<?= set_value('credential') ?>" class="form-control form-control-user <?= form_error('credential') ? 'is-invalid' : '' ?>" id="credential" placeholder="Masukkan Nama / Username" required>
+                                        <input type="text" name="credential" value="<?= set_value('credential') ?>" class="form-control form-control-user <?= form_error('credential') ? 'is-invalid' : '' ?>" id="credential" placeholder="Masukkan Username" required>
                                         <div id="credential" class="invalid-feedback">
                                             <?= form_error('credential') ?>
                                         </div>
@@ -26,7 +26,7 @@
                                             <?= form_error('password') ?>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-info btn-user btn-block">Masuk</button>
+                                    <button type="submit" class="btn btn-info btn-user btn-block">Login Now</button>
                                     <!-- <hr>
                                     <div class="text-center">
                                         <small><a href="<?= base_url('auth/forgot_password') ?>">Lupa Kata Sandi</a></small>

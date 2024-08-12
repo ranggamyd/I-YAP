@@ -9,15 +9,15 @@
 
     <div class="card shadow-sm">
         <div class="card-header">
-            <a href="#" class="btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#tambah_rule"><i class="fas fa-plus-circle mr-2"></i>Tambah data</a>
+            <a href="#" class="btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#tambah_rule"><i class="fas fa-plus-circle mr-2"></i>Tambah Data</a>
         </div>
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered table-striped" id="dataTable">
                     <thead class="text-center">
                         <th>#</th>
-                        <th>Nama Penyakit</th>
-                        <th>Nama Gejala</th>
+                        <th>Penyakit</th>
+                        <th>Gejala</th>
                         <th>CF Pakar</th>
                         <!-- <th>CF User (Bobot AHP)</th> -->
                         <th><i class="fas fa-cogs"></i></th>
@@ -51,21 +51,21 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="tambah_ruleLabel">Tambah rule</h5>
+                    <h5 class="modal-title" id="tambah_ruleLabel">Tambah Data Rule</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form action="<?= base_url('rule/tambah') ?>" method="post">
-                        <label for="nama">Nama Penyakit :</label>
+                        <label for="nama">Penyakit :</label>
                         <select name="id_penyakit" id="addRule" id="id_penyakit" class="form-control mb-3" required>
                             <option value="" readonly>-- PILIH --</option>
                             <?php foreach ($penyakit as $p) : ?>
                                 <option value="<?= $p['id_penyakit'] ?>"><?= $p['kode_penyakit']; ?> - <?= $p['nama_penyakit'] ?></option>
                             <?php endforeach ?>
                         </select>
-                        <label for="nama" class="mt-3">Nama Gejala :</label>
+                        <label for="nama" class="mt-3">Gejala :</label>
                         <select name="id_gejala" id="addRule2" id="id_gejala" class="form-control mb-3" required>
                             <option value="" readonly>-- PILIH --</option>
                             <?php foreach ($gejala as $g) : ?>
@@ -78,7 +78,7 @@
                 <div class="modal-footer">
                     <button type="reset" class="btn btn-outline-secondary"><i class="fas fa-undo mr-1"></i>
                         Reset</button>
-                    <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Simpan</button>
+                    <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Save</button>
                 </div>
                 </form>
             </div>
@@ -91,7 +91,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="edit_ruleLabel">Edit rule</h5>
+                        <h5 class="modal-title" id="edit_ruleLabel">Edit Data Rule</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -99,7 +99,7 @@
                     <div class="modal-body">
                         <form action="<?= base_url('rule/edit') ?>" method="post">
                             <input type="hidden" class="form-control mb-3" id="id_rule" value="<?= $item['id_rule'] ?>" name="id_rule" required>
-                            <label for="nama">Nama Penyakit :</label>
+                            <label for="nama">Penyakit :</label>
                             <select name="id_penyakit" id="id_penyakit" class="form-control mb-3" required>
                                 <option value="<?= $item['id_penyakit'] ?>"><?= $item['kode_penyakit']; ?> - <?= $item['nama_penyakit'] ?></option>
                                 <option value="" readonly>-- PILIH --</option>
@@ -107,7 +107,7 @@
                                     <option value="<?= $p['id_penyakit'] ?>"><?= $p['kode_penyakit']; ?> - <?= $p['nama_penyakit'] ?></option>
                                 <?php endforeach ?>
                             </select>
-                            <label for="nama" class="mt-1">Nama Gejala :</label>
+                            <label for="nama" class="mt-1">Gejala :</label>
                             <select name="id_gejala" id="id_gejala" class="form-control mb-3" required>
                                 <option value="<?= $item['id_gejala'] ?>"><?= $item['kode_gejala']; ?> - <?= $item['nama_gejala'] ?></option>
                                 <option value="" readonly>-- PILIH --</option>
@@ -121,7 +121,7 @@
                     <div class="modal-footer">
                         <button type="reset" class="btn btn-outline-secondary"><i class="fas fa-undo mr-1"></i>
                             Reset</button>
-                        <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Simpan</button>
+                        <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Save</button>
                     </div>
                     </form>
                 </div>

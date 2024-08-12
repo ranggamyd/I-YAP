@@ -1,14 +1,14 @@
 <div class="container-fluid">
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Laporan Hasil Diagnosa</h1>
+        <h1 class="h3 mb-0 text-gray-800">Hasil Diagnosis Pengguna</h1>
         <a href="<?= base_url('laporan/cetak_detail/' . $id) ?>" id="print" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="tooltip" data-placement="right" title="Klik tombol ini untuk mencetak hasil diagnosa"><i class="fas fa-print fa-sm text-white-50"></i> Print</a>
     </div>
     <div class="row">
         <div class="col-6">
             <div class="card shadow-sm mb-3">
                 <div class="card-header">
-                    <h4 class="mb-0 text-gray-800">Data Pengguna</h4>
+                    <h4 class="mb-0 text-gray-800">Data Pasien</h4>
                 </div>
                 <div class="card-body">
                     <table class="table table-striped">
@@ -25,7 +25,7 @@
                             <td><?= $pasien['umur'] ?></td>
                         </tr>
                         <tr>
-                            <th>No. HP:</th>
+                            <th>No. Telp:</th>
                             <td><?= $pasien['no_hp'] ?></td>
                         </tr>
                         <tr>
@@ -33,7 +33,7 @@
                             <td><?= $pasien['alamat'] ?></td>
                         </tr>
                         <tr>
-                            <th>Tanggal Diagnosa:</th>
+                            <th>Tanggal Diagnosis:</th>
                             <td><?= $pasien['tanggal'] ?></td>
                         </tr>
                     </table>
@@ -44,14 +44,14 @@
         <div class="col-6">
             <div class="card shadow-sm mb-3">
                 <div class="card-header">
-                    <h4 class="mb-0 text-gray-800">Gejala yang di alami pasien</h4>
+                    <h4 class="mb-0 text-gray-800">Gejala yang dialami</h4>
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered table-striped diagnosa">
                         <tr>
                             <th width="8%">No</th>
                             <th width="10%">Kode</th>
-                            <th>Gejala yang dialami (keluhan)</th>
+                            <th>Gejala</th>
                             <th width="20%">Pilihan</th>
                         </tr>
                         <?php
@@ -74,10 +74,10 @@
     </div>
     <div class="card border-top-primary shadow-sm mb-3 text-center">
         <div class="card-header">
-            <h4 class="mb-0 text-gray-800">Hasil Diagnosa</h4>
+            <h4 class="mb-0 text-gray-800">Hasil</h4>
         </div>
         <div class="card-body">
-            <h5>Jenis penyakit yang disebabkan oleh gejala tersebut adalah : </h5>
+            <h5>Jenis penyakit yang disebabkan oleh gejala tersebut adalah</h5>
             <?php
             $key = 0;
             foreach ($arpenyakit as $key => $value) {
@@ -114,7 +114,7 @@
         <div class="col">
             <div class="card shadow-sm mb-3">
                 <div class="card-header">
-                    <h4 class="mb-0 text-gray-800">Kemungkinan lain</h4>
+                    <h4 class="mb-0 text-gray-800">Kemungkinan Lain</h4>
                 </div>
                 <div class="card-body">
                     <?php

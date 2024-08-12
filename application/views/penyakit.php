@@ -9,15 +9,15 @@
 
     <div class="card shadow-sm">
         <div class="card-header">
-            <a href="#" class="btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#tambah_penyakit"><i class=" fas fa-plus-circle mr-2"></i>Tambah data</a>
+            <a href="#" class="btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#tambah_penyakit"><i class=" fas fa-plus-circle mr-2"></i>Tambah Data</a>
         </div>
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered table-striped" id="dataTable">
                     <thead class="text-center">
                         <th>#</th>
-                        <th>Kode Penyakit</th>
-                        <th>Nama Penyakit</th>
+                        <th>Kode</th>
+                        <th>Penyakit</th>
                         <th>Solusi</th>
                         <th><i class="fas fa-cogs"></i></th>
                     </thead>
@@ -49,16 +49,16 @@
         <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="tambah_penyakitLabel">Tambah penyakit</h5>
+                    <h5 class="modal-title" id="tambah_penyakitLabel">Tambah Jenis Penyakit</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form action="<?= base_url('penyakit/tambah') ?>" method="post">
-                        <label for="kode_penyakit">Kode penyakit :</label>
+                        <label for="kode_penyakit">Kode :</label>
                         <input type="text" class="form-control mb-3" id="kode_penyakit" name="kode_penyakit" value="<?= $kode_penyakit_auto ?>" readonly required>
-                        <label for="nama_penyakit">Nama penyakit :</label>
+                        <label for="nama_penyakit">Nama Penyakit :</label>
                         <input type="text" class="form-control mb-3" id="nama_penyakit" name="nama_penyakit" required>
                         <label for="solusi">Solusi :</label>
                         <textarea name="solusi" id="solusi" cols="12" rows="5" class="form-control"></textarea>
@@ -66,7 +66,7 @@
                 <div class="modal-footer">
                     <button type="reset" class="btn btn-outline-secondary"><i class="fas fa-undo mr-1"></i>
                         Reset</button>
-                    <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Simpan</button>
+                    <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Save</button>
                 </div>
                 </form>
             </div>
@@ -79,17 +79,17 @@
             <div class="modal-dialog modal-md" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="edit_penyakitLabel">Edit penyakit</h5>
+                        <h5 class="modal-title" id="edit_penyakitLabel">Edit Data Penyakit</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
                         <form action="<?= base_url('penyakit/edit') ?>" method="post">
-                            <label for="kode_penyakit">Kode penyakit :</label>
+                            <label for="kode_penyakit">Kode :</label>
                             <input type="hidden" class="form-control mb-3" id="id_penyakit" name="id_penyakit" value="<?= $item['id_penyakit'] ?>" required readonly>
                             <input type="text" class="form-control mb-3" id="kode_penyakit" name="kode_penyakit" value="<?= $item['kode_penyakit'] ?>" required readonly>
-                            <label for="nama_penyakit">Nama penyakit :</label>
+                            <label for="nama_penyakit">Nama Penyakit :</label>
                             <input type="text" class="form-control mb-3" id="nama_penyakit" name="nama_penyakit" value="<?= $item['nama_penyakit'] ?>" required>
                             <label for="solusi">Solusi :</label>
                             <textarea name="solusi" id="solusi" cols="12" rows="5" class="form-control"><?= $item['solusi'] ?></textarea>
@@ -97,7 +97,7 @@
                     <div class="modal-footer">
                         <button type="reset" class="btn btn-outline-secondary"><i class="fas fa-undo mr-1"></i>
                             Reset</button>
-                        <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Simpan</button>
+                        <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Save</button>
                     </div>
                     </form>
                 </div>

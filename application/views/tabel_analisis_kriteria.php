@@ -2,7 +2,7 @@
 <div class="container-fluid text-dark">
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Tabel Analisa Kriteria(Gejala) Matriks AHP</h1>
+        <h1 class="h3 mb-0 text-gray-800">Matriks Perbandingan untuk Penyakit</h1>
         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate
             Report</a> -->
     </div>
@@ -20,7 +20,7 @@
         ?>
         <!-- Analisa -->
         <div class="card card-header">
-            <h4 class="title">Tabel Analisa Kriteria(Gejala)</h4>
+            <h4 class="title">Matriks Perbandingan Gejala</h4>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -83,7 +83,7 @@
     <!-- Perbandingan -->
     <div class="card shadow-sm mb-3">
         <div class="card card-header">
-            <h4 class="title">Tabel Perbandingan Analisa</h4>
+            <h4 class="title">Matriks Nilai Prioritas</h4>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -152,7 +152,7 @@
     <!-- Penjumlahan -->
     <div class="card shadow-sm mb-3">
         <div class="card card-header">
-            <h4 class="title">Tabel Analisa Prioritas</h4>
+            <h4 class="title">Matriks Nilai Eigen</h4>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -218,7 +218,7 @@
     <!-- Rasio Konsistensi -->
     <div class="card shadow-sm mb-3">
         <div class="card card-header">
-            <h4 class="title">Tabel Analisa Prioritas</h4>
+            <h4 class="title">Tabel Nilai Alternatif</h4>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -226,7 +226,7 @@
                     <table class="table border-1 table-hover table-striped">
                         <thead>
                             <tr>
-                                <th>Rasio Konsistensi</th>
+                                <th>Gejala</th>
                                 <th class="bg-info text-white">Jumlah</th>
                                 <th class="bg-success text-white">Prioritas</th>
                                 <th class="bg-warning text-white">Hasil</th>

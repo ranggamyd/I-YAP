@@ -8,14 +8,18 @@
         $nama_penyakit = $pe['nama_penyakit'];
     ?>
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Analisa Perbandingan Kriteria(Gejala) Pada Penyakit <strong><?= $nama_penyakit ?></strong></h1>
+            <h1 class="h3 mb-0 text-gray-800">Perbandingan Alternatif (Gejala) pada Penyakit</h1>
             <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate
             Report</a> -->
         </div>
 
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800"> -> <strong><?= $nama_penyakit ?></strong></h1>
+        </div>
+
         <div class="card shadow mb-3">
             <a href="#penyakit" class="d-block collapsed card-header bg-primary py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="penyakit">
-                <h5 class="m-0 font-weight-bold text-light">Analisa Perbandingan Prioritas Gejala Penyakit <?= $nama_penyakit ?></h5>
+                <h5 class="m-0 font-weight-bold text-light">Analisis Perbandingan Gejala pada Penyakit <?= $nama_penyakit ?></h5>
             </a>
 
             <div class="collapse show" id="penyakit">
@@ -142,7 +146,7 @@
 
         <div class="card shadow mb-3">
             <a href="#matriks" class="d-block collapsed card-header bg-info py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="matriks">
-                <h5 class="m-0 font-weight-bold text-light">Matriks Perbandingan Gejala Penyakit <?= $nama_penyakit ?></h5>
+                <h5 class="m-0 font-weight-bold text-light">Matriks Perbandingan untuk Penyakit <?= $nama_penyakit ?></h5>
             </a>
             <div class="collapse" id="matriks">
                 <div class="card-body">
@@ -164,7 +168,7 @@
                         ?>
                         <!-- Analisa -->
                         <div class="card card-header">
-                            <h5 class="m-0 font-weight-bold text-dark">Tabel Analisa Kriteria(Gejala)</h5>
+                            <h5 class="m-0 font-weight-bold text-dark">Matriks Perbandingan Gejala</h5>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -233,7 +237,7 @@
                     <!-- Perbandingan -->
                     <div class="card shadow-sm mb-3">
                         <div class="card card-header">
-                            <h5 class="m-0 font-weight-bold text-dark">Tabel Perbandingan Analisa</h5>
+                            <h5 class="m-0 font-weight-bold text-dark">Matriks Nilai Prioritas</h5>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -303,7 +307,7 @@
                     <!-- Penjumlahan -->
                     <div class="card shadow-sm mb-3">
                         <div class="card card-header">
-                            <h5 class="m-0 font-weight-bold text-dark">Tabel Analisa Prioritas</h5>
+                            <h5 class="m-0 font-weight-bold text-dark">Matriks Nilai Eigen</h5>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -370,7 +374,7 @@
                     <!-- Rasio Konsistensi -->
                     <div class="card shadow-sm mb-3">
                         <div class="card card-header">
-                            <h5 class="m-0 font-weight-bold text-dark">Tabel Rasio Konsistensi</h5>
+                            <h5 class="m-0 font-weight-bold text-dark">Tabel Nilai Alternatif</h5>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -378,7 +382,7 @@
                                     <table class="table border-1 table-hover table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Rasio Konsistensi</th>
+                                                <th>Gejala</th>
                                                 <th class="bg-info text-white">Jumlah</th>
                                                 <th class="bg-success text-white">Prioritas</th>
                                                 <!-- <th class="bg-warning text-white">Hasil</th> -->
@@ -407,7 +411,7 @@
                                             <?php endforeach; ?>
                                             <!-- <table class="table" style="margin : 40px 0 10px 0;">
                                                 <tr>
-                                                    <td colspan="4"><input type="submit" class="btn btn-fill btn-info" name="" value="Simpan Ke Database"> </td>
+                                                    <td colspan="4"><input type="submit" class="btn btn-fill btn-info" name="" value="Simpan Perbandingan"> </td>
                                                 </tr>
                                             </table> -->
                                         </tbody>

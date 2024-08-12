@@ -8,7 +8,7 @@
     ?>
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Matriks Perbandingan Gejala Penyakit <?= $nama_penyakit ?></h1>
+            <h1 class="h3 mb-0 text-gray-800">Matriks Perbandingan untuk Penyakit <?= $nama_penyakit ?></h1>
             <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate
             Report</a> -->
         </div>
@@ -30,7 +30,7 @@
             ?>
             <!-- Analisa -->
             <div class="card card-header">
-                <h4 class="title">Tabel Analisa Kriteria(Gejala) </h4>
+                <h4 class="title">Matriks Perbandingan Gejala</h4>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -94,7 +94,7 @@
         <!-- Perbandingan -->
         <div class="card shadow-sm mb-3">
             <div class="card card-header">
-                <h4 class="title">Tabel Perbandingan Analisa</h4>
+                <h4 class="title">Matriks Nilai Prioritas</h4>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -164,7 +164,7 @@
         <!-- Penjumlahan -->
         <div class="card shadow-sm mb-3">
             <div class="card card-header">
-                <h4 class="title">Tabel Analisa Prioritas</h4>
+                <h4 class="title">Matriks Nilai Eigen</h4>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -231,7 +231,7 @@
         <!-- Rasio Konsistensi -->
         <div class="card shadow-sm mb-3">
             <div class="card card-header">
-                <h4 class="title">Tabel Rasio Konsistensi</h4>
+                <h4 class="title">Tabel Nilai Alternatif</h4>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -239,9 +239,9 @@
                         <table class="table border-1 table-hover table-striped">
                             <thead>
                                 <tr>
-                                    <th>Rasio Konsistensi</th>
+                                    <th>Gejala</th>
                                     <th class="bg-info text-white">Jumlah</th>
-                                    <th class="bg-success text-white">Prioritas (Untuk Nilai CF Pakar)</th>
+                                    <th class="bg-success text-white">Prioritas</th>
                                     <!-- <th class="bg-warning text-white">Hasil</th> -->
                                 </tr>
                             </thead>
@@ -273,7 +273,7 @@
                                 <?php endforeach; ?>
                                 <table class="table" style="margin : 40px 0 10px 0;">
                                     <tr>
-                                        <td colspan="4"><input type="submit" class="btn btn-fill btn-info" name="" value="Simpan Ke Database" id="<?= $id_penyakit ?>" name="<?= $id_penyakit ?>"> </td>
+                                        <td colspan="4"><input type="submit" class="btn btn-fill btn-info" name="" value="Simpan Perbandingan" id="<?= $id_penyakit ?>" name="<?= $id_penyakit ?>"> </td>
                                     </tr>
                                 </table>
                             </tbody>

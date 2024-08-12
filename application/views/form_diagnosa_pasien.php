@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>SPDP Itik - Metode AHP CF</title>
+    <title>SDP Itik - Metode AHP CF</title>
     <!-- bootstrap css -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets') ?>/front/css/bootstrap.min.css" />
     <!-- style css -->
@@ -92,7 +92,7 @@
             <div class="row justify-content-center" id="cek">
                 <div class="col-12 text-center">
                     <div class="card">
-                        <h1 id="heading" class="mt-2">Cek Diagnosa</h1>
+                        <h1 id="heading" class="mt-2">Registrasi</h1>
                         <form id="msform" action="<?= base_url('landing_page/diagnosa') ?>" method="post">
                             <div class="form-card">
                                 <!-- <div class="row">
@@ -107,25 +107,25 @@
                                                                                                                                     ?>">
                                 <div class="row">
                                     <div class="col">
-                                        <label for="nama">Nama Lengkap :</label>
+                                        <label for="nama">Nama Itik :</label>
                                         <input type="text" class="form-control main-form mb-3" id="nama" name="nama" required>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <label for="umur">Umur :</label>
+                                        <label for="umur">Umur Itik :</label>
                                         <input type="text" class="form-control main-form mb-3" id="umur" name="umur" required>
-                                        <label for="no_hp">No. HP :</label>
+                                        <label for="no_hp">No. Telp Pemilik :</label>
                                         <input type="text" class="form-control main-form mb-3" id="no_hp" name="no_hp" required>
                                     </div>
                                     <div class="col-sm-6">
                                         <label for="alamat">Alamat :</label>
-                                        <textarea name="alamat" id="alamat" cols="10" rows="5" class="form-control main-form"></textarea>
+                                        <textarea name="alamat" id="alamat" cols="10" rows="5" class="form-control main-form" required></textarea>
                                     </div>
                                 </div>
 
                             </div>
-                            <h1 id="heading" class="mt-2">Pilih kondisi gejala yg dialami hewan</h1>
+                            <h1 id="heading" class="mt-2">Pilih Gejala yang sedang dialami Itik</h1>
                             <div class="form-card">
                                 <div class="table-responsive">
                                     <table class="table table-bordered table-striped">
@@ -133,8 +133,8 @@
                                         <thead class="text-center">
                                             <th>#</th>
                                             <th>Kode</th>
-                                            <th>Nama Gejala</th>
-                                            <th>Pilih Kondisi</th>
+                                            <th>Gejala</th>
+                                            <th>Pilihan</th>
                                         </thead>
                                         <tbody>
                                             <?php
@@ -162,7 +162,7 @@
                                 </div>
                             </div>
                             <!-- <input type="button" name="next" class="next action-button" value="Next" /> -->
-                            <input type="submit" class="finish action-button-finish" data-toggle="tooltip" data-placement="top" title="Klik disini untuk melihat hasil diagnosa" name="submit" value="Cek Diagnosa" style="font-family:Arial, FontAwesome">
+                            <input type="submit" class="finish action-button-finish" data-toggle="tooltip" data-placement="top" title="Klik disini untuk melihat hasil diagnosa" name="submit" value="Diagnosis" style="font-family:Arial, FontAwesome">
                         </form>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
 =============================-->
     <div class="copyright_section">
         <div class="container">
-            <p class="copyright_text">Copyright © 2024. SPDP ITIK - Metode AHP CF</p>
+            <p class="copyright_text">Copyright &copy; Itik Healthy App - 2024</p>
         </div>
     </div>
 
@@ -211,7 +211,7 @@
             });
 
             if (allZero) {
-                alert('Harap memilih salah satu gejala');
+                alert('Pilih Tingkat Keyakinan pada Gejala yang dialami Minimal Satu');
                 event.preventDefault();
             } else {
                 event.submit();

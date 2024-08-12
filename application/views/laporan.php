@@ -2,7 +2,7 @@
 <div class="container-fluid">
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Laporan Hasil Diagnosa</h1>
+        <h1 class="h3 mb-0 text-gray-800">Laporan Hasil Diagnosis</h1>
         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate
             Report</a> -->
     </div>
@@ -14,9 +14,9 @@
             <div class="table-responsive">
                 <table class="table table-bordered table-striped diagnosa" id="dataTable">
                     <thead class="text-center">
-                        <th>No</th>
-                        <th>Pengguna</th>
-                        <th>Tgl Diagnosa</th>
+                        <th>#</th>
+                        <th>Pasien</th>
+                        <th>Tanggal</th>
                         <th>Penyakit</th>
                         <th>Nilai</th>
                         <th><i class="fas fa-cogs"></i></th>
