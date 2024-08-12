@@ -66,6 +66,7 @@
         <div class="container">
             <!-- Page Heading -->
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <a href="<?= base_url('landing_page/diagnosa') ?>" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm" data-toggle="tooltip" data-placement="right" title="Kembali"><i class="fas fa-arrow-left fa-sm text-white-50"></i> Kembali</a>
                 <h1 class="mb-0 text-gray-800">Hasil Diagnosis</h1>
                 <a href="#" id="print" onClick="window.print();" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="tooltip" data-placement="right" title="Klik tombol ini untuk mencetak hasil diagnosa"><i class="fas fa-print fa-sm text-white-50"></i> Print</a>
             </div>

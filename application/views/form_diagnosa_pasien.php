@@ -114,7 +114,12 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <label for="umur">Umur Itik :</label>
-                                        <input type="text" class="form-control main-form mb-3" id="umur" name="umur" required>
+                                        <select class="form-control main-form mb-3" id="umur" name="umur" required>
+                                            <option value=""></option>
+                                            <?php for ($i = 1; $i <= 15; $i++) { ?>
+                                                <option value="<?= $i ?>"><?= $i == 1 ? '<=' : '' ?><?= $i ?> tahun</option>
+                                            <?php } ?>
+                                        </select>
                                         <label for="no_hp">No. Telp Pemilik :</label>
                                         <input type="text" class="form-control main-form mb-3" id="no_hp" name="no_hp" required>
                                     </div>
