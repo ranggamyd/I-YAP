@@ -28,25 +28,23 @@ class Rule extends CI_Controller
         $id_penyakit = $this->input->post('id_penyakit');
         $id_gejala = $this->input->post('id_gejala');
 
-        // Validasi untuk mencegah duplikasi data
-        $existingData = $this->rule_model->getDataByPenyakitGejala($id_penyakit, $id_gejala);
-        if (!$existingData) {
-            $data = [
-                'id_penyakit' => $id_penyakit,
-                'id_gejala' => $id_gejala,
-            ];
+        foreach ($id_gejala as $item) {
+            $existingData = $this->rule_model->getDataByPenyakitGejala($id_penyakit, $item);
+            if (!$existingData) {
+                $data = [
+                    'id_penyakit' => $id_penyakit,
+                    'id_gejala' => $item,
+                ];
 
-            // Simpan data ke database
-            $this->rule_model->tambah($data);
-
-            // Tampilkan pesan sukses atau redirect ke halaman lain
-            $this->session->set_flashdata('sukses', 'Berhasil menambah rule !');
-            redirect('rule');
-        } else {
-            // Tampilkan pesan error atau redirect ke halaman lain
-            $this->session->set_flashdata('gagal', 'Data Sudah Ada !');
-            redirect('rule');
+                $this->rule_model->tambah($data);
+            } else {
+                $this->session->set_flashdata('gagal', 'Data Sudah Ada !');
+                return redirect('rule');
+            }
         }
+
+        $this->session->set_flashdata('sukses', 'Berhasil menambah rule !');
+        redirect('rule');
     }
 
     public function edit()
@@ -67,7 +65,7 @@ class Rule extends CI_Controller
             $this->rule_model->edit($data, $id_rule);
 
             // Tampilkan pesan sukses atau redirect ke halaman lain
-            $this->session->set_flashdata('sukses', 'Berhasil menambah rule !');
+            $this->session->set_flashdata('sukses', 'Berhasil mengubah rule !');
             redirect('rule');
         } else {
             // Tampilkan pesan error atau redirect ke halaman lain

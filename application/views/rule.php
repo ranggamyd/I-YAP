@@ -56,8 +56,8 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <form action="<?= base_url('rule/tambah') ?>" method="post">
+                <form action="<?= base_url('rule/tambah') ?>" method="post">
+                    <div class="modal-body">
                         <label for="nama">Penyakit :</label>
                         <select name="id_penyakit" id="addRule" id="id_penyakit" class="form-control mb-3" required>
                             <option value="" readonly>-- PILIH --</option>
@@ -66,20 +66,18 @@
                             <?php endforeach ?>
                         </select>
                         <label for="nama" class="mt-3">Gejala :</label>
-                        <select name="id_gejala" id="addRule2" id="id_gejala" class="form-control mb-3" required>
-                            <option value="" readonly>-- PILIH --</option>
-                            <?php foreach ($gejala as $g) : ?>
-                                <option value="<?= $g['id_gejala'] ?>"><?= $g['kode_gejala']; ?> - <?= $g['nama_gejala'] ?></option>
-                            <?php endforeach ?>
-                        </select>
-                        <!-- <label for="cf_pakar">Nilai CF :</label>
-                        <input type="text" class="form-control mb-3" id="cf_pakar" name="cf_pakar" readonly> -->
-                </div>
-                <div class="modal-footer">
-                    <button type="reset" class="btn btn-outline-secondary"><i class="fas fa-undo mr-1"></i>
-                        Reset</button>
-                    <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Save</button>
-                </div>
+                        <?php foreach ($gejala as $g) : ?>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" name="id_gejala[]" value="<?= $g['id_gejala'] ?>" class="custom-control-input" id="<?= $g['id_gejala'] ?>">
+                                <label class="custom-control-label" for="<?= $g['id_gejala'] ?>"><?= $g['kode_gejala']; ?> - <?= $g['nama_gejala'] ?></label>
+                            </div>
+                        <?php endforeach ?>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="reset" class="btn btn-outline-secondary"><i class="fas fa-undo mr-1"></i>
+                            Reset</button>
+                        <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Save</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -96,8 +94,8 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
-                        <form action="<?= base_url('rule/edit') ?>" method="post">
+                    <form action="<?= base_url('rule/edit') ?>" method="post">
+                        <div class="modal-body">
                             <input type="hidden" class="form-control mb-3" id="id_rule" value="<?= $item['id_rule'] ?>" name="id_rule" required>
                             <label for="nama">Penyakit :</label>
                             <select name="id_penyakit" id="id_penyakit" class="form-control mb-3" required>
@@ -108,21 +106,18 @@
                                 <?php endforeach ?>
                             </select>
                             <label for="nama" class="mt-1">Gejala :</label>
-                            <select name="id_gejala" id="id_gejala" class="form-control mb-3" required>
-                                <option value="<?= $item['id_gejala'] ?>"><?= $item['kode_gejala']; ?> - <?= $item['nama_gejala'] ?></option>
-                                <option value="" readonly>-- PILIH --</option>
-                                <?php foreach ($gejala as $g) : ?>
-                                    <option value="<?= $g['id_gejala'] ?>"><?= $g['kode_gejala']; ?> - <?= $g['nama_gejala'] ?></option>
-                                <?php endforeach ?>
-                            </select>
-                            <!-- <label for="cf_pakar" class="mt-1">Nilai CF :</label>
-                            <input type="text" class="form-control mb-3" id="cf_pakar" value="<?= $item['cf_pakar'] ?>" name="cf_pakar" readonly> -->
-                    </div>
-                    <div class="modal-footer">
-                        <button type="reset" class="btn btn-outline-secondary"><i class="fas fa-undo mr-1"></i>
-                            Reset</button>
-                        <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Save</button>
-                    </div>
+                            <?php foreach ($gejala as $g) : ?>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="id_gejala" value="<?= $g['id_gejala'] ?>" class="custom-control-input" id="edit-<?= $g['id_gejala'] ?>" <?= $item['id_gejala'] == $g['id_gejala'] ? 'checked' : '' ?>>
+                                    <label class="custom-control-label" for="edit-<?= $g['id_gejala'] ?>"><?= $g['kode_gejala']; ?> - <?= $g['nama_gejala'] ?></label>
+                                </div>
+                            <?php endforeach ?>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="reset" class="btn btn-outline-secondary"><i class="fas fa-undo mr-1"></i>
+                                Reset</button>
+                            <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Save</button>
+                        </div>
                     </form>
                 </div>
             </div>

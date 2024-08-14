@@ -49,43 +49,21 @@
            <!-- Magnific Popup core JS file -->
            <script src="<?= base_url('assets') ?>/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-           <!-- select2 -->
-           <!-- <script src="<?= base_url('assets') ?>/vendor/select2/select2.min.js" integrity="sha256-AFAYEOkzB6iIKnTYZOdUf9FFje6lOTYdwRJKwTN5mks=" crossorigin="anonymous"></script> -->
-           <!-- <script src="<?= base_url('assets') ?>/vendor/select2/select2.min.js"></script> -->
-
-           <!-- select2-bootstrap4-theme -->
-           <script src="<?= base_url('assets') ?>/vendor/select2/script.js"></script>
-
            <!-- Custom scripts for all pages-->
            <script>
-               $(document).ready(function() {
-                   $("#addRule").select2({
-                       dropdownParent: $("#tambah_rule"),
-                       theme: 'bootstrap4'
-                   });
-                   $("#addRule2").select2({
-                       dropdownParent: $("#tambah_rule"),
-                       theme: 'bootstrap4'
-                   });
-
-                   //    $('.select2bs4').select2({
-                   //        theme: 'bootstrap4'
-                   //    })
-
-                   $('.imgPopup').magnificPopup({
-                       type: 'image'
-                       // other options
-                   });
-                   $('.pdfPopup').magnificPopup({
-                       type: 'iframe'
-                   });
-                   $('#dataTable').dataTable();
-                   $('#dataTable2').dataTable();
-                   $('#dataTable3').dataTable();
-                   $('#dataTable4').dataTable();
-                   $('[data-toggle="tooltip"]').tooltip({
-                       placement: "bottom"
-                   });
+               $('.imgPopup').magnificPopup({
+                   type: 'image'
+                   // other options
+               });
+               $('.pdfPopup').magnificPopup({
+                   type: 'iframe'
+               });
+               $('#dataTable').dataTable();
+               $('#dataTable2').dataTable();
+               $('#dataTable3').dataTable();
+               $('#dataTable4').dataTable();
+               $('[data-toggle="tooltip"]').tooltip({
+                   placement: "bottom"
                });
 
                $(document).ready(function() {

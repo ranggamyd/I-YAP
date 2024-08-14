@@ -80,7 +80,7 @@ class Matriks extends CI_Controller
             );
 
             $this->matriks_model->updateRule($where, $data);
-            $this->session->set_flashdata('sukses', 'Berhasil Melakukan Perbandingan !');
+            // $this->session->set_flashdata('sukses', 'Berhasil Melakukan Perbandingan !');
         }
         $data['tabel'] = $this->matriks_model->get_data();
         $data['penyakit'] = $this->penyakit_model->get_penyakit_where($id_penyakit);

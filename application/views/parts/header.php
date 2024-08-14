@@ -30,10 +30,6 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets') ?>/img/logo_only.png" />
 
-    <!-- select2 -->
-    <link rel="stylesheet" href="<?= base_url('assets') ?>/vendor/select2/select2.min.css" integrity="sha256-FdatTf20PQr/rWg+cAKfl6j4/IY3oohFAJ7gVC3M34E=" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?= base_url('assets') ?>/vendor/select2/select2-bootstrap4.min.css">
-
     <!-- Perpage CSS -->
     <?php if (isset($style['css'])) : ?>
         <link rel="stylesheet" href="<?= base_url('assets') ?>/css/<?= $style['css'] ?>">
