@@ -174,7 +174,6 @@
                                                 // Perhitungan #λmaks
                                                 var λmaks<?= $bc->id_gejala; ?> = avgAX<?= $bc->id_gejala; ?> * sumR<?= $bc->id_gejala; ?>;
                                                 $('#λmaks<?= $bc->id_gejala; ?>').html(λmaks<?= $bc->id_gejala; ?>.toFixed(4));
-                                                $('#λmaks1<?= $bc->id_gejala; ?>').html(λmaks<?= $bc->id_gejala; ?>.toFixed(4));
                                             <?php endforeach; ?>
                                         });
                                     </script>
@@ -274,7 +273,7 @@
                                 ?>
                                     <tr>
                                         <td style="width: 55%;"><b><?= $bc->nama_gejala; ?></b></td>
-                                        <td class="bg-warning text-white" id="λmaks1<?= $rx; ?>"></td>
+                                        <td class="bg-warning text-white" id="λmaks<?= $rx; ?>"></td>
 
                                         <script type="text/javascript">
                                             $(document).ready(function() {
