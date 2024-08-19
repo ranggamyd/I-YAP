@@ -35,26 +35,6 @@
 </head>
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
-
-
-    <!-- <nav class="navbar main-nav shadow-sm navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
-        <div class="container">
-        
-            <a class="navbar-brand" href="<?= base_url('landing_page') ?>"><i class="fas fa-heartbeat mr-3 text-danger"></i>SISTEM PAKAR - MALNUTRISI</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="ti-menu"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item @@contact">
-                        <button class="h-100 bg-transparent border-0">
-                            <a class="btn btn-outline-primary" href="<?= base_url('auth') ?>"><i class="fas fa-lock mr-2"></i><span>Login</span></a>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
     <nav class="navbar main-nav shadow-sm navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
         <div class="header_section">
             <div class="" style="background-color: rgba(255, 255, 255, 0.2);">
@@ -65,11 +45,6 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <!-- <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li> -->
-                            </ul>
                             <div class="call_section">
                                 <ul>
                                     <div class="nav-item">
@@ -85,8 +60,8 @@
     </nav>
 
     <!--==============================
-=            Services            =
-===============================-->
+    =            Services            =
+    ===============================-->
     <section class="service pt-4">
         <div class="container">
             <div class="row justify-content-center" id="cek">
@@ -95,16 +70,6 @@
                         <h1 id="heading" class="mt-2">Registrasi</h1>
                         <form id="msform" action="<?= base_url('landing_page/diagnosa') ?>" method="post">
                             <div class="form-card">
-                                <!-- <div class="row">
-                                        <div class="col-7">
-                                            <h2 class="fs-title">Sudah Melakukan Registrasi? <a class="btn btn-link" href="<?= base_url('landing_page/diagnosa_pasien') ?>">Klik Disini!</a></h2>
-                                        </div>
-                                    </div> -->
-                                <input type="hidden" class="form-control main-form mb-3" id="id_pasien" value="<?= $idpasien ?>" name="id_pasien" readonly>
-                                <input type="hidden" class="form-control main-form" name="tgl_diagnosa" id="tgl_diagnosa" value="<?php
-                                                                                                                                    date_default_timezone_set('Asia/Jakarta');
-                                                                                                                                    echo date('Y-m-d H:i:s');
-                                                                                                                                    ?>">
                                 <div class="row">
                                     <div class="col">
                                         <label for="nama">Nama Itik :</label>
@@ -147,7 +112,6 @@
                                             foreach ($gejala as $item) : ?>
                                                 <tr>
                                                     <td class="text-center"><?= $no++; ?></td>
-                                                    <!-- <td><input type="text" name="kode_gejala[]" id="kode_gejala[]" class="form-control text-center border-0" style="width: 70px; background-color:  hsla(0 0% 0% / 0);" value="<?= $item['kode_gejala']; ?>" readonly></span></td> -->
                                                     <td><?= $item['kode_gejala']; ?></td>
                                                     <td>Apakah <b><?= $item['nama_gejala'] ?>?</b></td>
                                                     <td>
@@ -162,11 +126,9 @@
                                             <?php endforeach ?>
                                         </tbody>
 
-                                        <!-- <button class="float" type="submit" data-toggle="tooltip" data-placement="top" title="Klik disini untuk melihat hasil diagnosa" name="submit"><i class="fas fa-search mr-2"></i>Diagnosa</button> -->
                                     </table>
                                 </div>
                             </div>
-                            <!-- <input type="button" name="next" class="next action-button" value="Next" /> -->
                             <input type="submit" class="finish action-button-finish" data-toggle="tooltip" data-placement="top" title="Klik disini untuk melihat hasil diagnosa" name="submit" value="Diagnosis" style="font-family:Arial, FontAwesome">
                         </form>
                     </div>
@@ -177,8 +139,8 @@
     <!--====  End of Services  ====-->
 
     <!--============================
-=            Footer            =
-=============================-->
+    =            Footer            =
+    =============================-->
     <div class="copyright_section">
         <div class="container">
             <p class="copyright_text">Copyright &copy; Itik Healthy App - 2024</p>
