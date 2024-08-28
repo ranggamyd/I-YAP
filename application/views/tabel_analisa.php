@@ -30,7 +30,7 @@
             ?>
             <!-- Analisa -->
             <div class="card card-header">
-                <h4 class="title">Tabel Analisa Kriteria(Gejala) </h4>
+                <h4 class="title">Matriks Perbandingan Gejala</h4>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -94,7 +94,7 @@
         <!-- Perbandingan -->
         <div class="card shadow-sm mb-3">
             <div class="card card-header">
-                <h4 class="title">Tabel Perbandingan Analisa</h4>
+                <h4 class="title">Matriks Nilai Prioritas</h4>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -188,7 +188,7 @@
         <!-- Penjumlahan -->
         <div class="card shadow-sm mb-3">
             <div class="card card-header">
-                <h4 class="title">Tabel Analisa Prioritas</h4>
+                <h4 class="title">Matriks Nilai Eigen</h4>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -255,7 +255,7 @@
         <!-- Rasio Konsistensi -->
         <div class="card shadow-sm mb-3">
             <div class="card card-header">
-                <h4 class="title">Tabel Rasio Konsistensi</h4>
+                <h4 class="title">Tabel Nilai Alternatif</h4>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -264,7 +264,7 @@
                             <thead>
                                 <tr>
                                     <th>Kriteria</th>
-                                    <th class="bg-warning text-white">(λ maks)</th>
+                                    <th class="bg-warning text-white">Nilai Eigen</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -298,7 +298,7 @@
                                     </tr>
                                 <?php endforeach; ?>
                                 <tr>
-                                    <th class="bg-secondary text-light">Jumlah</th>
+                                    <th class="bg-secondary text-light">Jumlah Nilai Eigen (λ maks)</th>
 
                                     <th class="bg-secondary text-light" id="sumλmaks"></th>
                                     <script type="text/javascript">
@@ -319,7 +319,7 @@
 
                                 </tr>
                                 <tr>
-                                    <th class="bg-light">Consistency Index (CI) <span id="cri" style="float: right;"></span></th>
+                                    <th class="bg-light">Consistency Index<span id="cri" style="float: right;"></span></th>
 
                                     <th class="bg-light ci" id="cr"></th>
                                     <script type="text/javascript">
@@ -338,7 +338,7 @@
 
                                 </tr>
                                 <tr>
-                                    <th class="bg-light">Consistency Ratio (CR)</th>
+                                    <th class="bg-light">Consistency Ratio</th>
                                     <th class="bg-light" id="finalCR"></th>
                                     <script>
                                         $(document).ready(function() {
@@ -386,8 +386,8 @@
                                 <table class="table" style="margin : 40px 0 10px 0;">
                                     <tr>
                                         <td>
-                                            <input type="submit" class="btn btn-fill btn-primary" name="" value="Simpan Ke Database" id="<?= $id_penyakit ?>" name="<?= $id_penyakit ?>">
-                                            <button class="btn btn-fill btn-danger float-right" onclick="history.back()"><i class="fas fa-sync-alt mr-2"></i>Bandingkan ulang</button>
+                                            <input type="submit" class="btn btn-fill btn-primary" name="" value="Simpan Perbandingan" id="<?= $id_penyakit ?>" name="<?= $id_penyakit ?>">
+                                            <button class="btn btn-fill btn-danger float-right" onclick="history.back()"><i class="fas fa-sync-alt mr-2"></i>Kalkukasi Ulang</button>
                                         </td>
                                     </tr>
                                 </table>
