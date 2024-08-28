@@ -28,7 +28,7 @@ class Landing_page extends CI_Controller
 
                     $this->pasien_model->tambah2($dataPasien);
 
-                    $id_pasien      = $this->db->insert_id();;
+                    $id_pasien      = $this->db->insert_id();
                     $tgl_diagnosa   = date('Y-m-d H:i:s');
                     $kondisi        = $this->input->post('kondisi');
 
