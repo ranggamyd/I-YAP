@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>SDP Itik - Metode AHP CF</title>
+    <title>I-YAP</title>
     <!-- bootstrap css -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets') ?>/front/css/bootstrap.min.css" />
     <!-- style css -->
@@ -81,8 +81,8 @@
                                         <label for="umur">Umur Itik :</label>
                                         <select class="form-control main-form mb-3" id="umur" name="umur" required>
                                             <option value=""></option>
-                                            <?php for ($i = 1; $i <= 15; $i++) { ?>
-                                                <option value="<?= $i ?>"><?= $i == 1 ? '<=' : '' ?><?= $i ?> tahun</option>
+                                            <?php for ($i = 1; $i <= 96; $i++) { ?>
+                                                <option value="<?= $i ?>"><?= $i == 1 ? '<=' : '' ?><?= $i ?> Minggu</option>
                                             <?php } ?>
                                         </select>
                                         <label for="no_hp">No. Telp Pemilik :</label>
